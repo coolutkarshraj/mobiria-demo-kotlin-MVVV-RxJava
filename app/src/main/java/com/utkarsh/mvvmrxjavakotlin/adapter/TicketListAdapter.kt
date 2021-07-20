@@ -53,6 +53,7 @@ class TicketListAdapter() : RecyclerView.Adapter<TicketListAdapter.MyViewHolder>
     * */
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
+        private  var isCalled: Boolean = true;
         private var numNew: Long? = null
         private val tvTitle: TextView = view.tvTItle
         private val tvDesc = view.tvDesc
@@ -67,25 +68,33 @@ class TicketListAdapter() : RecyclerView.Adapter<TicketListAdapter.MyViewHolder>
         fun bind(data: TicketsListDataModel) {
             tvTitle.text = data.product_name
             tvDesc.text = data.campaigns_title
-            var num = data.campaigns_remaining_uts.toLong()
-            Timer().scheduleAtFixedRate(object : TimerTask() {
-                override fun run() {
-                    num--
-                    numNew = num;
-                    Log.e("count_down_timer","Count Down Timer "+ numNew)
+            if(isCalled){
+                var num = data.campaigns_remaining_uts.toLong()
+                isCalled = false;
+                Timer().scheduleAtFixedRate(object : TimerTask() {
+                    override fun run() {
 
-                    Handler(Looper.getMainLooper()).post(Runnable {
-                        // do something
-                        btDay.text = Utils.calculateDay(numNew!!).toString()
-                        btHour.text = Utils.calculateHours(numNew!!).toString()
-                        btMin.text = Utils.calculateMin(numNew!!).toString()
-                        btSec.text = Utils.calculateSec(numNew!!).toString()
-                    })
+                        num--
+                        numNew = num;
+                        Log.e("count_down_timer","Count Down Timer "+ numNew)
 
-                }
-            }, 0, 1000) //put here time 1000 milliseconds=1 second
+                        Handler(Looper.getMainLooper()).post(Runnable {
+                            // do something
+                            btDay.text = Utils.calculateDay(numNew!!).toString()
+                            btHour.text = Utils.calculateHours(numNew!!).toString()
+                            btMin.text = Utils.calculateMin(numNew!!).toString()
+                            btSec.text = Utils.calculateSec(numNew!!).toString()
+                        })
 
-            val url = data.campaigns_image
+                    }
+                }, 0, 1000) //put here time 1000 milliseconds=1 second
+
+
+            }else{
+
+            }
+
+              val url = data.campaigns_image
             Glide.with(ivIcon)
                 .load(url)
                 .circleCrop()
