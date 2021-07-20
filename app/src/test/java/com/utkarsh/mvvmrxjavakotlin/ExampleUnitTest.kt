@@ -1,4 +1,4 @@
-package com.android.booksearchrxjavakotlin
+package com.utkarsh.mvvmrxjavakotlin
 
 import org.junit.Test
 

@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.booksearchrxjavakotlin.R
 import com.utkarsh.mvvmrxjavakotlin.adapter.TicketListAdapter
 import com.utkarsh.mvvmrxjavakotlin.viewmodel.MainActivityViewModel
 import kotlinx.android.synthetic.main.activity_main.*

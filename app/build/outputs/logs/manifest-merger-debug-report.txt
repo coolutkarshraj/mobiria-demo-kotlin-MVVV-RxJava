@@ -50,7 +50,7 @@ INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app
 INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:3:5-49
+		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -101,10 +101,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ut
 		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:13:9-65
 	android:usesCleartextTraffic
 		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:14:9-44
-activity#com.android.booksearchrxjavakotlin.activity.LoginActivity
+activity#com.utkarsh.mvvmrxjavakotlin.activity.LoginActivity
 ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:15:19-57
+		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:15:19-85
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
@@ -115,10 +115,10 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.android.booksearchrxjavakotlin.MainActivity
+activity#com.utkarsh.mvvmrxjavakotlin.MainActivity
 ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:22:9-24:20
 	android:name
-		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:22:19-47
+		ADDED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml:22:19-75
 uses-sdk
 INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\AndroidProject\BookSearchRXJava-main\BookSearchRxJavaKotlin\app\src\main\AndroidManifest.xml

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.utkarsh.mvvmrxjavakotlin.MainActivity
-import com.android.booksearchrxjavakotlin.R
+import com.utkarsh.mvvmrxjavakotlin.R
 import com.utkarsh.mvvmrxjavakotlin.utils.Utils
 import com.utkarsh.mvvmrxjavakotlin.viewmodel.LoginActivityViewModel
 import kotlinx.android.synthetic.main.activity_login.*
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
             }else if(!Utils.isValidEmail(etEmail.text.toString())){
                 Toast.makeText(this, "Please enter valid email.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
-            }else if(etEmail.text.toString().isEmpty()){
+            }else if(etPassword.text.toString().isEmpty()){
                 Toast.makeText(this, "Please enter password.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }else{
