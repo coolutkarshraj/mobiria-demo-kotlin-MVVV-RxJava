@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="425dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlTopdesc"
+            android:layout_width="match_parent"
+            android:background="#f2631f"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/tvTItle"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Win A Jaguar"/>
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_below="@+id/tvTItle"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Win A Jaguar"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlTopdesc"
+            android:scaleType="centerInside"
+            android:layout_height="140dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btnDrawDate"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#fdd04e"
+            android:text="Draw Date"
+            android:layout_below="@+id/ivIcon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeRemaining"
+            android:layout_below="@+id/btnDrawDate"
+            android:layout_centerHorizontal="true"
+            android:text="Time Remaining"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:weightSum="4"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvTimeRemaining">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=""
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+           <Button
+               android:layout_width="0dp"
+               android:layout_weight="0.8"
+               android:text="8 days"
+               android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="8 hour"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="8 min"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=":"
+
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="288 Sec"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DemoAppRxJavaKotlinMVVM</string>
+    <string name="service_demo_app">Kotlin MVVM Retrofit RxJava Demo App</string>
+    <string name="win_a_jaguar">Win A Jaguar</string>
+    <string name="draw_date">Draw Date</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="_8_days">8 days</string>
+    <string name="_8_hour">8 hour</string>
+    <string name="_8_min">8 min</string>
+    <string name="_288_sec">288 Sec</string>
+    <string name="dot">:</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="fetch_data">Error in fetching data</string>
+</resources>

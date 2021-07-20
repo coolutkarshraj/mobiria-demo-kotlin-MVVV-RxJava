@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+    tools:context="com.utkarsh.mvvmrxjavakotlin.activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nintydp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/thirtyFiveDp"
+        android:text="@string/login"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/tvLoginText"
+        android:layout_width="fill_parent"
+        android:drawablePadding="@dimen/font_10"
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/thirtyFiveDp"
+        android:textColor="@color/black"
+        android:text="info@test.com"
+        app:drawableStartCompat="@drawable/ic_baseline_email_24"
+        android:layout_height="@dimen/sixty_dp"
+        android:padding="@dimen/fivedp"
+        android:background="@drawable/rounded_edittext" />
+
+    <EditText
+        android:layout_below="@+id/etEmail"
+        android:layout_width="fill_parent"
+        android:inputType="textPassword"
+        android:text="hello@1985"
+        android:drawablePadding="@dimen/font_10"
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/thirtyFiveDp"
+        android:textColor="@color/black"
+        android:hint="@string/password"
+        android:id="@+id/etPassword"
+        app:drawableStartCompat="@drawable/password"
+        android:layout_height="@dimen/sixty_dp"
+        android:padding="@dimen/fivedp"
+        android:background="@drawable/rounded_edittext" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginLeft="@dimen/twentyFive"
+        android:layout_marginRight="@dimen/twentyFive"
+        android:layout_marginTop="@dimen/thirty"
+        android:background="@drawable/rounded_edittext"
+        android:text="@string/login"
+        android:layout_below="@+id/etPassword"/>
+</RelativeLayout>

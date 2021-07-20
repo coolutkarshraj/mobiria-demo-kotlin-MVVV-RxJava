@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/fifteendp"
+    app:cardElevation="@dimen/tenDp"
+    android:layout_margin="@dimen/fivedp"
+    android:layout_height="@dimen/fourTHirtyFifeDP">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlTopdesc"
+            android:layout_width="match_parent"
+            android:background="@color/red"
+            android:layout_height="@dimen/eightydp">
+            <TextView
+                android:id="@+id/tvTItle"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sixteensp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:layout_height="wrap_content"
+                android:text="@string/win_a_jaguar"/>
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_below="@+id/tvTItle"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sixteensp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fivedp"
+                android:layout_height="wrap_content"
+                android:text="@string/win_a_jaguar"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlTopdesc"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/oneFortyDP"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftydp"
+            android:id="@+id/btnDrawDate"
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_marginLeft="@dimen/thirtyFiveDp"
+            android:layout_marginRight="@dimen/thirtyFiveDp"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/draw_date"
+            android:layout_below="@+id/ivIcon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeRemaining"
+            android:layout_below="@+id/btnDrawDate"
+            android:layout_centerHorizontal="true"
+            android:text="@string/time_remaining"
+            android:textSize="@dimen/eighteensp"
+            android:layout_marginTop="@dimen/fifteendp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftydp"
+            android:layout_marginTop="@dimen/fifteendp"
+            android:weightSum="4"
+            android:layout_marginLeft="@dimen/thirtyFiveDp"
+            android:layout_marginRight="@dimen/thirtyFiveDp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvTimeRemaining">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=""
+                android:textSize="@dimen/thirtyFiveDp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btDay"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="@string/_8_days"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="@string/dot"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btHour"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="@string/_8_hour"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="@string/dot"
+                android:textSize="@dimen/thirtyFiveDp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btMin"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="@string/_8_min"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="@string/dot"
+
+                android:textSize="@dimen/thirtyFiveDp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btSec"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:text="@string/_288_sec"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
